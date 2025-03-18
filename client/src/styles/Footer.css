@@ -1,0 +1,30 @@
+
+.theIcon {
+	margin-bottom: 2%;
+	max-height: 5%;
+	max-width: 5%;
+}
+
+@media (max-width: 540px) {
+
+
+.theIcon {
+	margin-bottom: 2%;
+	max-height: 10%;
+	max-width: 10%;
+}
+
+ 
+
+}
+
+@media (max-width: 414px) {
+  
+.theIcon{
+	margin-bottom: 2%;
+	max-height: 10%;
+	max-width: 10%;
+   
+  }
+
+}

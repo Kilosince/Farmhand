@@ -1,0 +1,179 @@
+.big-file-view { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.big-file-view h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.big-file-view button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.big-file-view button:hover {
+  background-color: #0056b3;
+}
+
+.file-details {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.file-details p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.file-details label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.file-details input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.save-button, .delete-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.save-button {
+  background-color: #28a745;
+  margin-right: 10px; /* Add separation between save and delete buttons */
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.file-preview-large {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.file-preview-large img,
+.file-preview-large video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.error {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.existing-notes h3 {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #007bff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.existing-notes h3:hover {
+  color: #0056b3;
+}
+
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.note-item {
+  width: 90%; /* Ensures all notes are consistently sized */
+  max-width: 600px; /* Limits the maximum width for larger screens */
+  margin: 5px auto;
+  padding: 8px 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  word-wrap: break-word; /* Ensures long text wraps to the next line */
+}
+
+.note-item p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #333;
+  word-wrap: break-word; /* Wraps long text inside paragraphs */
+  overflow-wrap: break-word; /* Compatibility with modern browsers */
+}
+
+.note-item button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.note-item button:hover {
+  background-color: #c82333;
+}
+
+.note-item hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 5px 0;
+}

@@ -1,0 +1,78 @@
+/* General container styling */
+.render-files-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* File item styling */
+.render-file-item {
+  border: 2px solid #ff6900;
+  border-radius: 6px;
+  background-color: white;
+  padding: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* File Name Header - always visible */
+.render-file-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6900;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Collapsible Content - hidden by default */
+.render-file-content {
+  display: none;
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+/* When expanded, show the content */
+.render-file-item.active .render-file-content {
+  display: block;
+}
+
+/* Download button - CENTERED */
+.download-btn {
+  background-color: #ff6900;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  display: block; /* Makes sure it takes full width */
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; /* Centers the button */
+}
+
+.download-btn:hover {
+  background-color: white;
+  color: #ff6900;
+  border: 2px solid #ff6900;
+}
+
+/* Expand/Collapse icon */
+.toggle-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6900;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate icon when expanded */
+.render-file-item.active .toggle-icon {
+  transform: rotate(180deg);
+}

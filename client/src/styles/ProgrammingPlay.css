@@ -1,0 +1,243 @@
+/* ProgrammingPlay.css */
+
+.programming-play-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.1);
+  padding-bottom: 40px; /* Adds extra padding at the bottom to prevent overlap */
+  border: 2px dashed #888;
+}
+
+.programming-play-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.programming-play-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 30px; /* Adjusted bottom margin to separate from "Add Slot" button */
+  justify-content: center;
+}
+
+.programming-play-slot {
+  width: 150px;
+  height: 180px;
+  background-color: #e9ecef;
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: border-color 0.3s;
+  margin-bottom: 20px; /* Ensures space between slots */
+  cursor: pointer;
+}
+
+/* Green status */
+.programming-play-slot.green {
+  border-color: green;
+}
+
+/* Red status */
+.programming-play-slot.red {
+  border-color: red;
+}
+
+.programming-play-file-preview {
+  width: 100%;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.programming-play-file-preview img,
+.programming-play-file-preview video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+}
+
+.programming-play-slot-input {
+  width: 90%;
+  padding: 6px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  display: none; /* Hidden by default for double-click edit */
+}
+
+.programming-play-slot.edit-mode .programming-play-slot-input {
+  display: inline-block; /* Show when in edit mode */
+}
+
+.programming-play-add-button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px; /* Adds space above the button */
+  margin-bottom: 30px; /* Adds space below the button */
+  transition: background-color 0.3s ease;
+}
+
+.programming-play-add-button:hover {
+  background-color: #0056b3;
+}
+
+.programming-play-access-selection {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.programming-play-access-label {
+  font-size: 16px;
+  color: #333;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.programming-play-error {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Additional styles for ProgrammingDisplay */
+
+.programming-display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 900px;
+  margin: 1em auto;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.programming-display-container h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.program-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.program-item {
+  background-color: #e0e4ff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.program-item.selected {
+  background-color: #4a5fe6;
+  color: white;
+  font-weight: bold;
+}
+
+.program-item:hover {
+  background-color: #4a5fe6;
+  color: white;
+}
+
+.program-details {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.program-details h5 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f4fa;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.file-item:hover {
+  background-color: #e6eaf1;
+}
+
+.file-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.file-item strong {
+  margin-right: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.file-item span {
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.file-item span:hover {
+  color: #4a5fe6;
+}
+
+.error-message {
+  color: #d9534f;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}

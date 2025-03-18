@@ -1,0 +1,124 @@
+.programming-display-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.programming-display-container h4 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #333;
+}
+
+/* Styling for error messages */
+.error-message {
+  color: #d9534f;
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Program list styling */
+.program-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual program item */
+.program-item {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: #333;
+}
+
+.program-item:hover {
+  background-color: #f0f8ff;
+}
+
+/* Highlight the selected program item */
+.program-item.selected {
+  background-color: #e8f4ff;
+  font-weight: bold;
+  color: #007;
+}
+
+/* Program details section */
+.program-details {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.program-details h5 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0073e6;
+}
+
+.file-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between elements inside file-actions */
+}
+
+
+/* Styling for each file item within program details */
+.file-item {
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  padding-right: 50px; /* Adjust spacing between elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.file-item:last-child {
+  border-bottom: none;
+}
+
+.file-item p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.file-item p strong {
+  color: #333;
+}
+
+.file-item input {
+  flex: 1; /* Allow input to occupy available space */
+  margin-right: 10px; /* Spacing between input and delete-dot */
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+}
+
+.delete-dot {
+  color: red;
+  font-size: 1.2em;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 10px;
+}
+
+.delete-dot:hover {
+  color: red;
+}
+
+/* Ensure .file-item has relative positioning for .delete-dot placement */

@@ -1,0 +1,61 @@
+/* Header styles */
+.editIcon {
+  max-width: 15%;
+  margin-right: 2%;
+}
+
+.header-tune {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+  align-items: center;     /* horizontally center content */
+  background-color: var(--accent-color);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100; /* ensures it's always on top */
+}
+
+/* Header bounds */
+.header-tune-bounds {
+  display: flex;
+  align-items: center; /* center items vertically */
+  justify-content: center; /* center content horizontally */
+  height: 100%;
+  padding: 0 1em;
+  position: relative;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .editIcon {
+    max-width: 20%;
+    max-height: 20%;
+    margin-left: 2%;
+    margin-bottom: 0; /* removed margin-bottom for proper alignment */
+  }
+
+  .header-tune {
+    height: 55px; /* slightly reduced height */
+    padding: 5px 10px;
+  }
+
+  .header-tune-bounds {
+    height: auto;
+    padding: 1em; /* reduced padding for better fit */
+  }
+
+  .header-banner {
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .editIcon {
+    max-width: 40%;
+    max-height: 40%;
+  }
+}

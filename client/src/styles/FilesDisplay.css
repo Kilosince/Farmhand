@@ -1,0 +1,77 @@
+.files-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.files-list {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* File Item - Clickable Container */
+.file-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: var(--bs-bg-fill-02, #1a1a1a);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  cursor: pointer;
+}
+
+/* Selected State - Turns Green */
+.file-item.selected {
+  border: 2px solid green;
+  box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.3);
+}
+
+/* File Media */
+.file-item img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Hover Effect */
+.file-item:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .file-item {
+    width: 90%; /* Adjust for mobile layout */
+    max-width: 180px;
+    padding: 15px;
+  }
+
+  .file-item img,
+  .file-item video {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Adjust max height for smaller screens */
+  }
+
+  .file-checkbox-container {
+    top: 5px;
+    left: 5px;
+  }
+}

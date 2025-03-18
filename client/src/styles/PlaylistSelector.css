@@ -1,0 +1,95 @@
+/* General button styling */
+.CreateGuy,
+.confirm-btn,
+.cancel-btn,
+.process-btn {
+  border: 2px solid #ff6900;
+  background-color: white;
+  color: #ff6900;
+  font-weight: bold;
+  padding: 14px 24px; /* Slightly increased padding for better button appearance */
+  margin-top: 2%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  width: 95%; /* Let the buttons take nearly full width */
+  max-width: 900px; /* Increased max width for a larger appearance */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.CreateGuy:hover,
+.confirm-btn:hover,
+.cancel-btn:hover,
+.process-btn:hover {
+  background-color: #ff6900;
+  color: white;
+}
+
+/* Aligning the playlist container */
+.playlist-container {
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Ensure the playlist list stays centered */
+.playlist-container ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 900px; /* Increased for better width balance */
+  margin: 0 auto;
+}
+
+/* Align each playlist item */
+.playlist-container li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns checkbox and title to the left */
+  gap: 12px; /* Adjusts spacing between checkbox and title */
+  padding: 12px;
+  width: 100%;
+  max-width: 900px; /* Widened */
+  border-bottom: 1px solid #ddd;
+  background: white;
+}
+
+/* Adjusting the checkbox position */
+.playlist-container input[type="checkbox"] {
+  transform: scale(1.4); /* Enlarged for better usability */
+  accent-color: #ff6900;
+  margin: 0;
+}
+
+/* Title Styling */
+.playlist-item strong {
+  flex-grow: 1; /* Allows the text to take up remaining space */
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments for tablets */
+@media screen and (max-width: 1024px) {
+  .CreateGuy,
+  .confirm-btn,
+  .cancel-btn,
+  .process-btn {
+    width: 100%;
+    max-width: 95%;
+    font-size: 1rem;
+    padding: 12px 18px;
+  }
+
+  .playlist-container ul {
+    max-width: 95%;
+  }
+
+  .playlist-container li {
+    max-width: 95%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

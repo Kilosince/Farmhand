@@ -1,0 +1,126 @@
+/* Container */
+.playlist-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Header */
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Playlist Bin */
+.playlist-bin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-height: 150px;
+  box-sizing: border-box;
+}
+
+/* Slot Styling */
+.playlist-slot {
+  flex: 1 1 150px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.playlist-slot:hover {
+  background-color: #f0f0f0;
+}
+
+/* Add Seq Button */
+.add-file-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-file-button:hover {
+  background-color: #0056b3;
+}
+
+/* Upload Playlist Button */
+.upload-playlist-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upload-playlist-button:hover {
+  background-color: #218838;
+}
+
+/* Access Type Selection */
+.access-type-selection {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.access-type-selection label {
+  margin-right: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.access-type-selection input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .playlist-bin {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .add-file-button,
+  .upload-playlist-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .playlist-bin {
+    gap: 5px;
+  }
+
+  .add-file-button,
+  .upload-playlist-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

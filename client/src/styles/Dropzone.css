@@ -1,0 +1,64 @@
+
+.programming-bank, .sequenceworld, .renderfiles {
+  text-decoration: none; /* Remove underline initially */
+  color: #90d6ff; /* Customize link color as desired */
+  font-weight: bold;
+  margin-left: 75%; /* Aligns the link to the right in a flex container */
+  margin-bottom: 2px; /* Reduced spacing for closer alignment */
+  display: inline-block;
+}
+
+.programming-bank:hover, .sequenceworld:hover, .renderfiles:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.prog-play-bin-container {
+  padding: 20px;
+  max-width: 100vw; /* Ensure the container fits within the viewport */
+}
+
+.project-card {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  max-width: 100%;
+}
+
+/* Ensure the Drag-and-Drop area is styled properly */
+.dropzone {
+  border: 2px dashed #888;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.dropzone p {
+  color: #666;
+}
+
+
+
+@media (max-width: 540px) {
+
+ .programming-bank, .sequenceworld, .renderfiles {
+  text-decoration: none; /* Remove underline initially */
+  color: #90d6ff; /* Customize link color as desired */
+  font-weight: bold;
+  margin-left: 68%;
+  margin-right: 25%; /* Aligns the link to the right in a flex container */
+  margin-bottom: 2px; /* Reduced spacing for closer alignment */
+  display: inline-block;
+}
+
+
+}
+
+@media (max-width: 414px) {
+  
+
+
+}

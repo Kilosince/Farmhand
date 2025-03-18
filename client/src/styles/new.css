@@ -1,0 +1,62 @@
+body {
+  --primary-bg: rgb(255, 255, 255);
+  --primary-copy: rgb(50, 52, 65);
+  --toggle-bg: #ccc;
+  --toggle-color: #ffffff;
+}
+
+body.dark {
+  --primary-bg: rgb(50, 52, 65);
+  --primary-copy: rgb(255, 255, 255);
+  --toggle-bg: #ccc;
+  --toggle-color: rgb(50, 52, 65);
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-copy);
+  transition: background .5s ease, color .5s ease;
+}
+
+.twitter-picker>div {
+  background-color: var(--primary-bg);
+  transition: background .5s ease, color .5s ease;
+}
+
+[id^='rc-editable-input'] {
+  background: var(--primary-bg);
+  color: var(--primary-copy);
+  transition: background .5s ease, color .5s ease;
+}
+
+input[type="range"] {
+  color: var(--primary-copy);
+  transition: background .5s ease, color .5s ease;
+}
+
+/* adds additional padding to the bottom of an element */
+.pad-bottom {
+  padding-bottom: 40px;
+}
+
+/* added additional class name for header elements */
+.signout {
+  margin-top: 60px;
+}
+
+/* styles the signed in user's name in the header */
+.header nav span {
+  color: #fff;
+  margin-left: 20px;
+}
+
+/* styles the validation errors */
+.validation--errors--label {
+  color: #dc3545;
+  font-size: 28px;
+}
+
+.validation-errors ul {
+  color: #dc3545;
+  padding: 15px 0 40px 10px;
+}

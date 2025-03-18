@@ -1,0 +1,24 @@
+body {
+  padding-top: 120px; /* Adjust this value if necessary */
+}
+
+.footer {
+  position: relative; /* Keeps footer in the document flow */
+  width: 100%;
+  padding: 10px 0;
+  background-color: #000;
+  text-align: center;
+  bottom: 0;
+  margin-top: auto; /* Ensures it stays below content */
+}
+
+/* Ensures footer is always pushed down when content is short */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the full viewport height is utilized */
+}
+
+.content {
+  flex-grow: 1; /* Expands content area to push footer down */
+}

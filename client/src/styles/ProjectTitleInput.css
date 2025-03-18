@@ -1,0 +1,25 @@
+.project-tune-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.project-tune-label {
+  margin-bottom: 8px; /* Adds space between label and input field */
+  font-weight: bold;
+}
+
+.project-tune-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 30%;
+  height: 1.5em;
+  font-size: 1rem;
+}
+
+.project-tune-error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}

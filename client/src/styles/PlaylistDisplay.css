@@ -1,0 +1,64 @@
+/* Playlist Files Container */
+.playlist-files {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.playlist-track {
+  display: flex;
+  overflow-x: auto; /* Horizontal scrolling */
+  padding: 8px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 200px; /* Adjust height as needed */
+}
+
+.file-list {
+  display: flex;
+  gap: 15px; /* Space between items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-item {
+  min-width: 200px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+}
+
+/* File Previews (Images/Videos) */
+.file-preview {
+  width: 100%;
+  max-height: 150px;
+  border-radius: 5px;
+  object-fit: cover; /* Ensures the content fits well */
+  margin-bottom: 10px; /* Space between the preview and filename */
+}
+
+/* Filename Styling */
+.file-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Truncate long filenames */
+  max-width: 100%; /* Match the container width */
+  margin-top: 5px;
+}
+
+/* Slot Position Styling */
+.file-slot-position {
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+}

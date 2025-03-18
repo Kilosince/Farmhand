@@ -1,0 +1,144 @@
+.holder {
+   margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+/* Ensure images stack vertically on smaller screens */
+.PicDay {
+    border: 4px solid #000;
+    margin-right: 2%;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-heading {
+    color: #000;
+    border-radius: 15px;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .holder {
+        margin-top: 0%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .PicDay {
+        border: none;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+}
+
+.form-heading {
+    text-align: center;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 15px;
+}
+
+/* Form container */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Labels */
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Inputs and textarea */
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Prevent textarea resizing */
+.form-textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Hide honeypot field */
+.hidden-field {
+    display: none;
+}
+
+/* Character count and validation text */
+.character-count {
+    font-size: 12px;
+    color: #668;
+}
+
+.character-error {
+    font-size: 12px;
+    color: red;
+}
+
+/* Submit button */
+.sub-button {
+    width: 100%;
+    padding: 10px;
+    color: #ff6900;
+    border: 2px solid #ff6900;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.error-message, .success-message {
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    max-width: 28%;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
+@media (max-width: 768px) {
+    .holder {
+        margin-top: 0%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .PicDay {
+        border: none;
+        margin-bottom: 2%; /* Adds spacing between stacked images */
+        margin-right: 0; /* Removes side margin for correct centering */
+    }
+}

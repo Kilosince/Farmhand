@@ -1,0 +1,48 @@
+{
+  "userId": "66f8a2c934469998dad75674",
+  "generatedAt": "2025-02-17T22:12:19.693Z",
+  "playlists": [
+    {
+      "projectTitle": "Smoke_Show",
+      "projectId": "c80fc6c3-6c84-4321-8f1d-f587066da046",
+      "files": [
+        {
+          "fileName": "chop_test_1.mp4",
+          "path": "Smoke_Show/02_chop_test_1.mp4",
+          "seqPos": 2,
+          "key": "users/66f8a2c934469998dad75674/projects/c80fc6c3-6c84-4321-8f1d-f587066da046/playlists/e9d0f170-2986-4458-a951-916d9c75b904-1739671053716-271301a7-f8a4-417e-98ee-fc812c095166-chop_test_1.mp4",
+          "duration": 0.4004,
+          "frameRate": "30000/1001",
+          "resolution": "1920x1080",
+          "fileId": "cb478448-c425-40d5-bab1-6f7c3e920bab",
+          "projectId": "c80fc6c3-6c84-4321-8f1d-f587066da046",
+          "createdAt": "2025-02-16T02:23:52.124Z"
+        },
+        {
+          "fileName": "chop_test_3.mp4",
+          "path": "Smoke_Show/03_chop_test_3.mp4",
+          "seqPos": 3,
+          "key": "users/66f8a2c934469998dad75674/projects/c80fc6c3-6c84-4321-8f1d-f587066da046/playlists/a142d4d5-a01b-4171-a05c-cb98f48fd7aa-1739671053716-e31e0cdc-ca9c-4d6e-9eac-bb40abca5f46-chop_test_3.mp4",
+          "duration": 0.367042,
+          "frameRate": "30000/1001",
+          "resolution": "1920x1080",
+          "fileId": "8bf46458-bf2d-4aa2-a237-56d9fc560edd",
+          "projectId": "c80fc6c3-6c84-4321-8f1d-f587066da046",
+          "createdAt": "2025-02-16T02:24:03.643Z"
+        },
+        {
+          "fileName": "chop_test_2.mp4",
+          "path": "Smoke_Show/01_chop_test_2.mp4",
+          "seqPos": 1,
+          "key": "users/66f8a2c934469998dad75674/projects/c80fc6c3-6c84-4321-8f1d-f587066da046/playlists/f2bbb731-f4c8-4dec-83e1-2421e2dd237d-1739671053716-98ba6de8-2cb6-44f4-885d-bdafba6acb0e-chop_test_2.mp4",
+          "duration": 0.367042,
+          "frameRate": "30000/1001",
+          "resolution": "1920x1080",
+          "fileId": "e979989f-b90e-45d1-a6ba-d25a4d4fb8cd",
+          "projectId": "c80fc6c3-6c84-4321-8f1d-f587066da046",
+          "createdAt": "2025-02-16T02:23:44.404Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+/* Responsive Design for File Upload Component */
+.mt-5 {
+  margin-top: 2rem;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Dropzone Styles */
+.dropzone {
+  border: 2px dashed #007bff;
+  margin: 2%;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.dropzone p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.dropzone:hover {
+  background-color: #f9f9f9;
+}
+
+/* File List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+ul li img,
+ul li video {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+ul li img {
+  width: 100px;
+  height: 100px;
+}
+
+ul li video {
+  width: 200px;
+}
+
+ul li audio {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* Access Type Selection */
+div label {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+.radio-display {
+ margin-left: 2%;
+}
+
+.upload-button {
+   margin-left: 2%;
+}
+
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .dropzone {
+    padding: 1.5rem;
+  }
+
+  ul li img {
+    width: 80px;
+    height: 80px;
+  }
+
+  ul li video {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .dropzone {
+    padding: 1rem;
+  }
+
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul li img {
+    width: 60px;
+    height: 60px;
+  }
+}
